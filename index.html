@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criativos PulsarH.AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #111; display: flex; flex-wrap: wrap; gap: 40px; padding: 40px; justify-content: center; }
+    .heading { font-family: 'Outfit', sans-serif; }
+
+    /* Each creative is exactly 1080x1350 (4:5) scaled to fit screen */
+    .creative {
+      width: 540px;
+      height: 675px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    /* For actual export, use 1080x1350 */
+    .creative-full {
+      width: 1080px;
+      height: 1350px;
+    }
+
+    .label {
+      position: absolute;
+      top: -30px;
+      left: 0;
+      color: #666;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+<!-- CRIATIVO 1: Split Antes/Depois -->
+<div style="position:relative">
+  <div class="label">Criativo 1 — Split Antes/Depois</div>
+  <div class="creative" style="display:flex">
+    <!-- Left: Stagnation -->
+    <div style="flex:1; background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%); display:flex; flex-direction:column; justify-content:center; align-items:center; padding:30px; position:relative; border-right: 1px solid rgba(255,255,255,0.05);">
+      <div style="position:absolute; top:0; left:0; right:0; bottom:0; background: rgba(100,100,120,0.05);"></div>
+      <div style="position:relative; z-index:1; text-align:center;">
+        <div style="width:80px; height:80px; border-radius:20px; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:36px;">😰</div>
+        <p style="color:#666; font-size:11px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:12px;">Liderança 1.0</p>
+        <p style="color:#999; font-size:12px; line-height:1.6; max-width:200px;">Apagando incêndio.<br>Time desalinhado.<br>12h de trabalho.<br>Zero tempo pro estratégico.</p>
+      </div>
+      <div style="position:absolute; bottom:20px; left:0; right:0; text-align:center;">
+        <p style="color:#EF4444; font-size:10px; font-weight:900; letter-spacing:0.3em; text-transform:uppercase;">Estagnação</p>
+      </div>
+    </div>
+    <!-- Right: Acceleration -->
+    <div style="flex:1; background: linear-gradient(135deg, #0D1847 0%, #1a0a30 50%, #0D1847 100%); display:flex; flex-direction:column; justify-content:center; align-items:center; padding:30px; position:relative;">
+      <div style="position:absolute; top:20%; right:10%; width:200px; height:200px; background:radial-gradient(circle, rgba(107,45,139,0.3) 0%, transparent 70%); filter:blur(40px);"></div>
+      <div style="position:absolute; bottom:20%; left:10%; width:150px; height:150px; background:radial-gradient(circle, rgba(197,165,114,0.2) 0%, transparent 70%); filter:blur(40px);"></div>
+      <div style="position:relative; z-index:1; text-align:center;">
+        <div style="width:80px; height:80px; border-radius:20px; background:linear-gradient(135deg, rgba(107,45,139,0.3), rgba(197,165,114,0.2)); border:1px solid rgba(197,165,114,0.3); display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:36px; box-shadow: 0 0 30px rgba(107,45,139,0.3);">🚀</div>
+        <p style="color:#C5A572; font-size:11px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:12px;">Liderança 2.0</p>
+        <p style="color:#c4b8a8; font-size:12px; line-height:1.6; max-width:200px;">Gente + IA.gentes.<br>Equipe híbrida alinhada.<br>IA executa o robótico.<br>Você lidera o estratégico.</p>
+      </div>
+      <div style="position:absolute; bottom:20px; left:0; right:0; text-align:center;">
+        <p style="background: linear-gradient(90deg, #6B2D8B, #C5A572); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-size:10px; font-weight:900; letter-spacing:0.3em; text-transform:uppercase;">Aceleração</p>
+      </div>
+    </div>
+    <!-- Center overlay -->
+    <div style="position:absolute; top:30px; left:0; right:0; text-align:center; z-index:10;">
+      <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:999px; background:rgba(197,165,114,0.1); border:1px solid rgba(197,165,114,0.2); backdrop-filter:blur(10px);">
+        <div style="width:5px; height:5px; border-radius:50%; background:#C5A572; box-shadow:0 0 8px rgba(197,165,114,0.8);"></div>
+        <span style="color:#C5A572; font-size:8px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase;">A 2ª Revolução da IA</span>
+      </div>
+    </div>
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:10; text-align:center; width:90%;">
+      <p class="heading" style="color:white; font-size:22px; font-weight:900; text-transform:uppercase; line-height:1.1; text-shadow: 0 0 40px rgba(0,0,0,0.8);">Lidere Gente<br><span style="background:linear-gradient(90deg,#6B2D8B,#C5A572); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">+ IA.gentes</span></p>
+    </div>
+    <div style="position:absolute; bottom:12px; left:50%; transform:translateX(-50%); z-index:10;">
+      <span style="color:rgba(197,165,114,0.6); font-size:9px; font-weight:700; letter-spacing:0.15em;">PulsarH.AI</span>
+    </div>
+  </div>
+</div>
+
+<!-- CRIATIVO 2: Provocação -->
+<div style="position:relative">
+  <div class="label">Criativo 2 — Provocação</div>
+  <div class="creative" style="background: linear-gradient(160deg, #070514 0%, #0D1847 40%, #1a0a30 70%, #070514 100%); display:flex; flex-direction:column; justify-content:center; padding:40px; position:relative;">
+    <div style="position:absolute; top:15%; right:5%; width:300px; height:300px; background:radial-gradient(circle, rgba(107,45,139,0.25) 0%, transparent 70%); filter:blur(60px);"></div>
+    <div style="position:absolute; bottom:15%; left:5%; width:250px; height:250px; background:radial-gradient(circle, rgba(197,165,114,0.15) 0%, transparent 70%); filter:blur(60px);"></div>
+    <!-- Tag -->
+    <div style="position:absolute; top:25px; left:0; right:0; text-align:center; z-index:10;">
+      <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:999px; background:rgba(197,165,114,0.1); border:1px solid rgba(197,165,114,0.2);">
+        <div style="width:5px; height:5px; border-radius:50%; background:#C5A572;"></div>
+        <span style="color:#C5A572; font-size:8px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase;">A 2ª Revolução da IA já começou</span>
+      </div>
+    </div>
+    <!-- Content -->
+    <div style="position:relative; z-index:1; text-align:center;">
+      <p class="heading" style="color:white; font-size:26px; font-weight:900; line-height:1.15; margin-bottom:20px;">
+        Não é sobre<br>experiência...<br>é sobre quem já lidera com<br>
+        <span style="background:linear-gradient(90deg,#C5A572,#E8D5B0); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-size:30px;">IA.gentes + Gente</span>
+      </p>
+      <div style="width:60px; height:2px; background:linear-gradient(90deg,#6B2D8B,#C5A572); margin:20px auto;"></div>
+      <p style="color:#94a3b8; font-size:12px; line-height:1.6; max-width:350px; margin:0 auto;">
+        O líder que domina as 5 Dimensões lidera equipes híbridas e entrega 4,5x mais resultado.
+      </p>
+    </div>
+    <!-- Logo -->
+    <div style="position:absolute; bottom:20px; left:0; right:0; text-align:center;">
+      <span style="color:rgba(197,165,114,0.5); font-size:10px; font-weight:700; letter-spacing:0.15em;">PulsarH.AI</span>
+    </div>
+  </div>
+</div>
+
+<!-- CRIATIVO 3: 5 Dimensões -->
+<div style="position:relative">
+  <div class="label">Criativo 3 — 5 Dimensões</div>
+  <div class="creative" style="background: linear-gradient(180deg, #070514 0%, #0D1847 50%, #070514 100%); display:flex; flex-direction:column; justify-content:center; padding:35px; position:relative;">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:400px; height:400px; background:radial-gradient(circle, rgba(107,45,139,0.15) 0%, transparent 60%); filter:blur(80px);"></div>
+    <!-- Tag -->
+    <div style="text-align:center; margin-bottom:25px; position:relative; z-index:1;">
+      <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:999px; background:rgba(197,165,114,0.1); border:1px solid rgba(197,165,114,0.2);">
+        <span style="color:#C5A572; font-size:8px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase;">Imersão PulsarH.AI</span>
+      </div>
+    </div>
+    <!-- Title -->
+    <p class="heading" style="text-align:center; color:white; font-size:20px; font-weight:900; text-transform:uppercase; margin-bottom:30px; position:relative; z-index:1;">
+      Qual dimensão<br><span style="background:linear-gradient(90deg,#6B2D8B,#C5A572); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-size:24px;">te falta?</span>
+    </p>
+    <!-- 5 Cards -->
+    <div style="display:flex; flex-direction:column; gap:10px; position:relative; z-index:1;">
+      <div style="display:flex; gap:10px;">
+        <div style="flex:1; padding:14px; border-radius:14px; background:rgba(139,92,246,0.08); border:1px solid rgba(139,92,246,0.2);">
+          <p style="font-size:20px; margin-bottom:6px;">🔗</p>
+          <p style="color:#8B5CF6; font-size:10px; font-weight:900; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">Conector</p>
+          <p style="color:#94a3b8; font-size:9px; line-height:1.5;">Integra gente + IA.gentes numa direção só</p>
+        </div>
+        <div style="flex:1; padding:14px; border-radius:14px; background:rgba(197,165,114,0.08); border:1px solid rgba(197,165,114,0.2);">
+          <p style="font-size:20px; margin-bottom:6px;">⚡</p>
+          <p style="color:#C5A572; font-size:10px; font-weight:900; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">Hiperprodutivo</p>
+          <p style="color:#94a3b8; font-size:9px; line-height:1.5;">Delega o robótico pra IA, foca no estratégico</p>
+        </div>
+      </div>
+      <div style="display:flex; gap:10px;">
+        <div style="flex:1; padding:14px; border-radius:14px; background:rgba(107,45,139,0.08); border:1px solid rgba(107,45,139,0.2);">
+          <p style="font-size:20px; margin-bottom:6px;">🧠</p>
+          <p style="color:#6B2D8B; font-size:10px; font-weight:900; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">Humilde</p>
+          <p style="color:#94a3b8; font-size:9px; line-height:1.5;">Usa IA pra enxergar o que sozinho não vê</p>
+        </div>
+        <div style="flex:1; padding:14px; border-radius:14px; background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.2);">
+          <p style="font-size:20px; margin-bottom:6px;">📊</p>
+          <p style="color:#3B82F6; font-size:10px; font-weight:900; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">Sistêmico</p>
+          <p style="color:#94a3b8; font-size:9px; line-height:1.5;">Dados pra decidir, gente pra executar</p>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:center;">
+        <div style="width:calc(50% - 5px); padding:14px; border-radius:14px; background:rgba(239,68,68,0.06); border:1px solid rgba(239,68,68,0.15);">
+          <p style="font-size:20px; margin-bottom:6px;">❤️</p>
+          <p style="color:#EF4444; font-size:10px; font-weight:900; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">Humano</p>
+          <p style="color:#94a3b8; font-size:9px; line-height:1.5;">IA libera tempo pra cuidar de gente</p>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom -->
+    <div style="text-align:center; margin-top:25px; position:relative; z-index:1;">
+      <p style="color:#94a3b8; font-size:10px; margin-bottom:8px;">5 Dimensões do Líder na Era da IA</p>
+      <div style="display:inline-block; padding:10px 30px; border-radius:12px; background:linear-gradient(135deg, rgba(107,45,139,0.3), rgba(197,165,114,0.2)); border:1px solid rgba(197,165,114,0.3);">
+        <span style="color:white; font-size:11px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase;">R$297 · 12 aulas + 1:1</span>
+      </div>
+    </div>
+    <div style="position:absolute; bottom:12px; left:0; right:0; text-align:center;">
+      <span style="color:rgba(197,165,114,0.5); font-size:9px; font-weight:700; letter-spacing:0.15em;">PulsarH.AI</span>
+    </div>
+  </div>
+</div>
+
+<!-- CRIATIVO 4: Anti-300 -->
+<div style="position:relative">
+  <div class="label">Criativo 4 — Anti-300</div>
+  <div class="creative" style="background: linear-gradient(180deg, #070514 0%, #0D1847 100%); display:flex; flex-direction:column; position:relative;">
+    <!-- Top tag -->
+    <div style="text-align:center; padding-top:25px; position:relative; z-index:1;">
+      <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:999px; background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.2);">
+        <span style="color:#EF4444; font-size:8px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase;">Imersão pra 300 pessoas?</span>
+      </div>
+    </div>
+    <!-- Split -->
+    <div style="flex:1; display:flex; padding:20px 25px; gap:15px; align-items:center;">
+      <!-- Left: Bad -->
+      <div style="flex:1; border-radius:16px; background:rgba(239,68,68,0.04); border:1px solid rgba(239,68,68,0.1); padding:20px; display:flex; flex-direction:column; align-items:center; text-align:center; height:100%; justify-content:center;">
+        <div style="font-size:50px; margin-bottom:12px; opacity:0.6; filter:grayscale(100%);">👥</div>
+        <p style="color:#666; font-size:11px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:8px;">Imersão Genérica</p>
+        <div style="color:#555; font-size:10px; line-height:1.7;">
+          <p>300 pessoas no Zoom</p>
+          <p>Ninguém te ouve</p>
+          <p>Ninguém te conhece</p>
+          <p>No final: mentoria de R$15K</p>
+        </div>
+        <div style="width:40px; height:2px; background:#EF4444; margin-top:15px; opacity:0.4;"></div>
+      </div>
+      <!-- Right: Good -->
+      <div style="flex:1; border-radius:16px; background:linear-gradient(135deg, rgba(107,45,139,0.1), rgba(197,165,114,0.08)); border:1px solid rgba(197,165,114,0.2); padding:20px; display:flex; flex-direction:column; align-items:center; text-align:center; height:100%; justify-content:center; box-shadow: 0 0 40px rgba(107,45,139,0.1);">
+        <div style="font-size:50px; margin-bottom:12px;">🎯</div>
+        <p style="color:#C5A572; font-size:11px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:8px;">Imersão PulsarH</p>
+        <div style="color:#c4b8a8; font-size:10px; line-height:1.7;">
+          <p>12 aulas de 15 min</p>
+          <p>1:1 com Rodrigo Braga</p>
+          <p>Seu IA.gente criado</p>
+          <p>R$297 (12x R$24,75)</p>
+        </div>
+        <div style="width:40px; height:2px; background:linear-gradient(90deg,#6B2D8B,#C5A572); margin-top:15px;"></div>
+      </div>
+    </div>
+    <!-- Bottom -->
+    <div style="text-align:center; padding-bottom:25px; position:relative; z-index:1;">
+      <p class="heading" style="color:white; font-size:16px; font-weight:900; text-transform:uppercase; margin-bottom:10px;">
+        Não é curso. É <span style="background:linear-gradient(90deg,#6B2D8B,#C5A572); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">implementação.</span>
+      </p>
+      <span style="color:rgba(197,165,114,0.5); font-size:9px; font-weight:700; letter-spacing:0.15em;">PulsarH.AI</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
